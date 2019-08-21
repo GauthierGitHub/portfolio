@@ -50,7 +50,7 @@
         $(function () {
             $("#elastic_grid_demo").elastic_grid({
                 'showAllText': 'All',
-                'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+                'filterEffect': 'moveup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
                 'hoverDirection': true,
                 'hoverDelay': 0,
                 'hoverInverse': false,
@@ -58,57 +58,26 @@
                 'expandingHeight': 500,
                 'items': [{
                         'title': 'Me',
-                        'description': 'Hi, I\'m Gauthier Barbet from Aix-en-Provence, France. Thanks for visiting my site !<br/> Gauthier Barbet<br/> 13 rue Van Loo<br/>13100 Aix-en-Provence, FRANCE<br/> +337.68.66.06.11<br/> gauthierbarbet.pro@gmail.com',
+                        'description': 'Hi, I\'m Gauthier Barbet from Aix-en-Provence, France and I\'m web developer. Thanks for visiting my site !<br/> Gauthier Barbet<br/> 13 rue Van Loo<br/>13100 Aix-en-Provence, FRANCE<br/> +337.68.66.06.11<br/> gauthierbarbet.pro@gmail.com',
                         
-                        'thumbnail': ['images/small/portrait_tn.jpg', 'images/small/2.jpg',
-                            'images/small/3.jpg', 'images/small/10.jpg', 'images/small/11.jpg'
+                        'thumbnail': ['images/small/portrait_tn.jpg','images/small/moi_tn.jpg','images/portfolio/portfolio_code_tn.jpg', 
                         ],
-                        'large': ['images/large/portrait.jpg',  'https://www.youtube.com/watch?v=vdahvoE25HA&list=PLx-qGAzjv13c00FYZMLAJm65WjsT3ZmDR&index=16','images/large/2.jpg', 'images/large/10.jpg', 'images/large/11.jpg'
+                        'large': ['images/large/portrait.jpg', 'images/large/moi.jpg','images/portfolio/portfolio_code.jpg', 
                         ],
-                        'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2',
-                            'jquery elastic grid 3', 'jquery elastic grid 4',
-                            'jquery elastic grid 5'
+                        'img_title': ['Me'
                         ],
-                        /*
                         'button_list': [{
-                                'title': 'Me',
-                                'url': '/cv',
+                                'title': 'CV',
+                                'url': 'images/cv/cvGauthierBarbetAout2019.pdf',
                                 'new_window': true
                             },
                             {
-                                'title': 'Download',
-                                'url': 'http://porfolio.bonchen.net/',
+                                'title': 'Git',
+                                'url': 'https://github.com/GauthierGitHub/',
                                 'new_window': false
                             }
                         ],
-                        */
                         'tags': ['Me']
-                    },
-                    {
-                        'title': 'Education and academic activities',
-                        'description': 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
-                        'thumbnail': ['images/small/1.jpg', 'images/small/2.jpg',
-                            'images/small/3.jpg', 'images/small/10.jpg', 'images/small/11.jpg'
-                        ],
-                        'large': ['https://youtu.be/-6Xl9tBWt54', 'images/large/2.jpg',
-                            'images/large/3.jpg', 'images/large/10.jpg', 'images/large/11.jpg'
-                        ],
-                        'img_title': ['jquery elastic grid 1 ', 'jquery elastic grid 2',
-                            'jquery elastic grid 3', 'jquery elastic grid 4',
-                            'jquery elastic grid 5'
-                        ],
-                        'button_list': [{
-                                'title': 'Demo',
-                                'url': 'http://porfolio.bonchen.net/',
-                                'new_window': true
-                            },
-                            {
-                                'title': 'Download',
-                                'url': 'http://porfolio.bonchen.net/',
-                                'new_window': false
-                            }
-                        ],
-                        'tags': ['Education and academic activities']
                     },
                     {
                         'title': 'Thés de Chine',
@@ -138,7 +107,7 @@
                     },
                     {
                         'title': 'Arts Musants',
-                        'description': 'A site made for my mother who is artis peinter. Made with Symfony frameword designed with SCSS/SASS and embellish with Webpack Encore, Security, Masonry, Swift Mailor, Paginator ...',
+                        'description': 'A site made for my mother who is an artist peinter. Made with Symfony framework designed with SCSS/SASS and embellish with Webpack Encore, Security, Masonry, Swift Mailor, Paginator ...',
                         'thumbnail': ['images/artsmusants/home_tn.jpg', 'images/artsmusants/1_tn.jpg', 'images/artsmusants/buy_tn.jpg', 'images/artsmusants/admin_tn.jpg', 'images/artsmusants/buy2_tn.jpg'
                         ],
                         'large': ['images/artsmusants/home.jpg', 'images/artsmusants/1.jpg', 'images/artsmusants/buy.jpg', 'images/artsmusants/admin.jpg', 'images/artsmusants/buy2.jpg'
@@ -188,7 +157,7 @@
                         ],
                         'button_list': [{
                                 'title': 'Code',
-                                'url': 'http://porfolio.bonchen.net/',
+                                'url': 'https://github.com/GauthierGitHub/sextius',
                                 'new_window': true
                             },
                             {
@@ -203,6 +172,28 @@
                             }
                         ],
                         'tags': ['HTML/CSS']
+                    },
+                    {
+                        'title': 'Portfolio',
+                        'description': 'Inception !',
+                        'thumbnail': ['images/portfolio/home_tn.jpg', 'images/sextius/special_tn.jpg', 'images/portfolio/portfolio_code_tn.jpg', 
+                        ],
+                        'large': ['images/portfolio/home.jpg', 'images/sextius/special.jpg', 'images/portfolio/portfolio_code.jpg'
+                        ],
+                        'img_title': ['Portfolio'
+                        ],
+                        'button_list': [{
+                                'title': 'Code',
+                                'url': 'https://github.com/GauthierGitHub/portfolio',
+                                'new_window': true
+                            },
+                            {
+                                'title': 'Elastic Grid',
+                                'url': 'http://demo.phapsu.com/jquery.elastic_grid/index.php',
+                                'new_window': true
+                            }
+                        ],
+                        'tags': ['JavaScript']
                     },
                 ]
             });
